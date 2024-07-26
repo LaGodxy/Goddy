@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <div class="logo">G-Stephen</div> 
+             </div>
+            <ul class="navbar">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a>
+                    <ul class="dropdown">
+                        <li><a href="#">HTML CLASS</a></li>
+                        <li><a href="#">CSS CLASS</a></li>
+                        <li><a href="">JAVASCRIPT CLASS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Thanks for watching">
+                <button>Search</button>
+                
+            </div>
+            <label for="menu-bar" class="menu-bar">☰</label>
+        </nav>
+    </header>
+    <!-- Overlay -->
+<div id="overlay" class="overlay">
+    <div class="overlay-content">
+        <span class="closebtn" id="closeOverlay">&times;</span>
+        <ul class="navbar-overlay">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a>
+                <ul class="dropdown">
+                    <li><a href="#">HTML CLASS</a></li>
+                    <li><a href="#">CSS CLASS</a></li>
+                    <li><a href="#">JAVASCRIPT CLASS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+    <main>
+        <div class="signup-form login-form">
+            <h2>Sign Up Here</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username">
+                <p id="userNameError">Username not valid </p>
+                <input type="email" id="signupEmail" placeholder="Email" >
+                <p id="emailError">Email not valid </p>
+                <input type="password" id="signupPassword1" placeholder="Password">
+                <p id="password1Error">Password not valid</p>
+                <input type="password" id="signupPassword2" placeholder="Confirm Password">
+                <p id="password2Error">Password does not match</p>
+                <button type="submit" id="sign-up">Sign Up</button>       
+            </form>
+            <p class="account-text">Already have an account? <a href="/index.html"><span class="signup">Login</span></a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
